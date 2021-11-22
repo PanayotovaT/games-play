@@ -8,7 +8,7 @@ const Catalog = () => {
                     <img src="/images/avatar-1.jpg" alt="test" />
                     <h6>Action</h6>
                     <h2>Cover Fire</h2>
-                    <a href="/#" className="details-button">Details</a>
+                    <a href="/game-details" className="details-button">Details</a>
                 </div>
 
             </div>

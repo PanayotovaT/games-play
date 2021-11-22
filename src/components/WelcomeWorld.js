@@ -21,7 +21,7 @@ const WelcomeWorld = () => {
                         <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
                     </div>
                     <div className="data-buttons">
-                        <a href="/#" className="btn details-btn">Details</a>
+                        <a href="/game-details" className="btn details-btn">Details</a>
                     </div>
                 </div>
                 <div className="game">
