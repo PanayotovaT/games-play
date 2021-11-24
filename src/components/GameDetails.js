@@ -2,17 +2,16 @@ import { useState, useEffect } from 'react';
 import * as gameService from '../services/gameService';
 
 const GameDetails = ({
-    id
+    match
 }) => {
     const [game, setGame] = useState({});
-
     useEffect(() => {
-        gameService.getOne(id)
+        gameService.getOne(match.params.getId)
             .then(result => {
                 setGame(result);
             })
             .catch(err => console.log(err));
-    }, []);
+    }, [id]);
 
     return (
         <section id="game-details">
