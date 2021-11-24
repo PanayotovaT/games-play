@@ -1,13 +1,13 @@
 import { useState } from 'react';
 
 import Catalog from './components/Catalog/Catalog';
+import WelcomeWorld from './components/WelcomeWorld';
 import Create from './components/Create';
 import Edit from './components/Edit';
 import GameDetails from './components/GameDetails';
 import Header from './components/Header';
 import Login from './components/Login';
 import Register from './components/Register';
-import WelcomeWorld from './components/WelcomeWorld';
 import ErrorPage from './components/ErrorPage';
 
 function App() {
@@ -25,7 +25,7 @@ function App() {
 
 
     const routes = {
-      'home': < WelcomeWorld />,
+      'home': < WelcomeWorld navigationChangeHandler={navigationChangeHandler} />,
       'login': <Login />,
       'register': <Register />,
       'edit': <Edit />,

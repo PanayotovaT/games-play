@@ -14,7 +14,10 @@ const GameCard = ({
                 <img src={game.imageUrl} alt="img" />
                 <h6>{game.category}</h6>
                 <h2>{game.title}</h2>
-                <a href={`/game-details/${game._id}`} onClick={onDetailsClick} className="details-button">Details</a>
+                <a 
+                href={`/game-details/${game._id}`} 
+                onClick={onDetailsClick} 
+                className="details-button">Details</a>
             </div>
         </div>
     );

@@ -21,7 +21,11 @@ const Catalog = ({
 
             {games.length > 0
 
-                ? games.map(game => <GameCard key={game._id} game={game} navigationChangeHandler={navigationChangeHandler} />)
+                ? games.map(game => <GameCard 
+                    key={game._id} 
+                    game={game} 
+                    navigationChangeHandler={navigationChangeHandler} 
+                    />)
                 : <h3 className="no-articles">No games yet</h3>
             }
 
