@@ -1,17 +1,17 @@
 import { useState, useEffect } from 'react';
 import * as gameService from '../services/gameService';
+import { Redirect} from 'react-router-dom';
 
 const GameDetails = ({
     match
 }) => {
     const [game, setGame] = useState({});
     useEffect(() => {
-        gameService.getOne(match.params.getId)
+        gameService.getOne(match.params.gameId)
             .then(result => {
                 setGame(result);
-            })
-            .catch(err => console.log(err));
-    }, [id]);
+            });
+    }, []);
 
     return (
         <section id="game-details">

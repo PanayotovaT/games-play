@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch, Redirect } from 'react-router-dom';
 
 import Catalog from './components/Catalog/Catalog';
 import WelcomeWorld from './components/WelcomeWorld';
@@ -25,6 +25,14 @@ function App() {
           <Route path="/login"  component={Login} />
           <Route path="/register"  component={Register} />
           <Route path="/games/:gameId"  component={GameDetails} />
+          <Route path="/custom">
+              <h2>Custom Page</h2>
+              <p>loremsfvdvgdgszdvszdvzsv</p>
+          </Route>
+          <Route path="/logout" render={(props)=> {
+            console.log('logout');
+            return <Redirect to="/" />;
+          }} />
         </Switch>
       </main>
 

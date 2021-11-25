@@ -1,0 +1,7 @@
+.active-navigation-link {
+    background-color: rgb(179, 241, 179);
+    font-size: 20px;
+    padding: 5px;
+    text-decoration: underline;
+    text-decoration-color: green;
+}
